@@ -1,0 +1,47 @@
+# --- LLM 작업 지침 (회사 제출용 저장소에는 올리지 않음) ---
+CLAUDE.md
+.claude/
+CLAUDE.local.md
+.mcp.json
+AGENTS.md
+GEMINI.md
+.cursor/
+.cursorrules
+.codex/
+.omc/
+.github/copilot-instructions.md
+
+# --- 개인 학습 기록 (나만 봄, 저장소에 올리지 않음) ---
+docs/학습일지.md
+
+# --- 환경변수 / 시크릿 ---
+.env
+.env.*
+!.env.example
+application-secret.yml
+application-local.yml
+application-local.properties
+application-secret.properties
+docker-compose.override.yml
+*.pem
+*.key
+*.p12
+*.jks
+
+# --- Gradle / Java ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+out/
+*.class
+*.log
+
+# --- IDE ---
+.idea/
+*.iml
+*.iws
+.vscode/
+.DS_Store
+
+# --- Docker 볼륨 데이터 ---
+docker-data/
