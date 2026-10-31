@@ -19,6 +19,8 @@ docs/학습일지.md
 .env.*
 !.env.example
 application-secret.yml
+application-local.yaml
+application-secret.yaml
 application-local.yml
 application-local.properties
 application-secret.properties
