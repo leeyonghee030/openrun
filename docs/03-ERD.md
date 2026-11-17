@@ -26,7 +26,7 @@ stores 1 ──── 0..N waitings    (가게 1곳에 여러 대기)
 | role | VARCHAR(10) | NOT NULL. USER / STORE / ADMIN |
 | status | VARCHAR(10) | NOT NULL. ACTIVE / WITHDRAWN. 소프트 삭제 |
 | consecutive_no_show_count | INT | NOT NULL, 기본 0. 연속 노쇼 횟수. 입장 시 0, 취소는 무관, 제재 종료 시 0 |
-| banned_until | DATE | NULL. 제재 종료일. 비어 있으면 제재 없음. 5회째에 다음날~7일로 설정 |
+| banned_until | DATE | NULL. 제재 종료일. 비어 있으면 제재 없음. 5회째에 `노쇼 날짜 + 7일`로 설정. 종료일 당일까지 제재 |
 | created_at | DATETIME | NOT NULL. 가입 시각 |
 | withdrawn_at | DATETIME | NULL. 탈퇴 시각 |
 
